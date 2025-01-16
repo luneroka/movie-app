@@ -9,8 +9,20 @@ function Home() {
     { id: 5, title: 'The Wild Robot', release_date: '2024' },
   ];
 
+  function handleSearch(e) {}
+
   return (
     <div className='home'>
+      <form onSubmit={handleSearch} className='search-form'>
+        <input
+          type='text'
+          placeholder='Search for movies...'
+          className='search-input'
+        />
+        <button type='submit' className='search-button'>
+          Search
+        </button>
+      </form>
       <div className='movies-grid'>
         {movies.map((movie) => (
           <MovieCard movie={movie} key={movie.id} />
