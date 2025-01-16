@@ -12,7 +12,11 @@ function Home() {
     { id: 5, title: 'The Wild Robot', release_date: '2024' },
   ];
 
-  function handleSearch(e) {}
+  function handleSearch(e) {
+    e.preventDefault();
+    alert(searchQuery);
+    setSearchQuery('');
+  }
 
   return (
     <div className='home'>
