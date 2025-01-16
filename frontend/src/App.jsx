@@ -1,10 +1,11 @@
 import './App.css';
 import MovieCard from './components/MovieCard';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
-      <MovieCard movie={{title: 'SpongeBob', release_date: '2025'}} />
+      <Home />
     </>
   );
 }
